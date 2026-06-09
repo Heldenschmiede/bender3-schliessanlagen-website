@@ -1,0 +1,206 @@
+@layer base {
+  .page {
+    background-color: var(--background);
+  }
+
+  .hero {
+    padding: clamp(5rem, 10vw, 8rem) var(--spacing-6);
+    background-color: var(--background);
+    color: var(--foreground);
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .containerNarrow {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .heroTitle {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-4);
+    line-height: 1.1;
+  }
+
+  .heroIntro {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+
+  .gridSection {
+    padding: clamp(4rem, 8vw, 6rem) var(--spacing-6);
+    background-color: var(--surface);
+  }
+
+  .citiesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+    margin-bottom: clamp(4rem, 8vw, 6rem);
+  }
+
+  @media (min-width: 640px) {
+    .citiesGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .citiesGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .cityCard {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    padding: var(--spacing-4) 1.25rem;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+
+  .cityCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+  }
+
+  .cityCardHome {
+    border-color: color-mix(in srgb, var(--primary) 30%, var(--border));
+    background-color: color-mix(in srgb, var(--primary) 5%, var(--card));
+  }
+
+  .cityIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .cityName {
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--foreground);
+  }
+
+  .cityBadge {
+    margin-left: auto;
+  }
+
+  .infoBox {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(2rem, 5vw, 4rem);
+    box-shadow: var(--shadow-lg);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .infoTitle {
+    font-family: var(--font-family-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-6);
+    text-align: center;
+    color: var(--foreground);
+  }
+
+  .infoContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-6);
+  }
+
+  @media (min-width: 768px) {
+    .infoContent {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .infoItem {
+    display: flex;
+    gap: var(--spacing-4);
+    align-items: flex-start;
+  }
+
+  .infoIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .infoTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-1);
+  }
+
+  .infoLabel {
+    display: block;
+    font-family: var(--font-family-display);
+    color: var(--foreground);
+    font-size: 1.125rem;
+  }
+
+  .infoDesc {
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .highlightBanner {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    background-color: color-mix(in srgb, var(--primary) 8%, var(--surface));
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem var(--spacing-6);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--foreground);
+    max-width: 800px;
+    margin: 0 auto clamp(4rem, 8vw, 6rem) auto;
+  }
+
+  .highlightIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  .infoActions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    .infoActions {
+      flex-direction: row;
+    }
+  }
+
+  .actionButton {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .actionButton {
+      width: auto;
+      min-width: 200px;
+    }
+  }
+}

@@ -1,0 +1,227 @@
+@layer base {
+  .page {
+    background-color: var(--background);
+  }
+
+  .hero {
+    padding: clamp(5rem, 10vw, 8rem) var(--spacing-6);
+    background-color: var(--background);
+    color: var(--foreground);
+    text-align: center;
+  }
+
+  .heroContainer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .heroTitle {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-4);
+    line-height: 1.1;
+  }
+
+  .heroIntro {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+
+  .trustBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: color-mix(in srgb, var(--surface) 50%, transparent);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    transition: background-color 0.2s ease;
+    margin-top: var(--spacing-8);
+  }
+
+  .trustBadge:hover {
+    background-color: var(--surface);
+  }
+
+  .starIcon {
+    color: hsl(45, 100%, 50%);
+    fill: hsl(45, 100%, 50%);
+  }
+
+  .contentSection {
+    padding: clamp(4rem, 8vw, 6rem) var(--spacing-6);
+    background-color: var(--surface);
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-6);
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-8);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .cardIcon {
+    color: var(--primary);
+    margin-bottom: var(--spacing-2);
+  }
+
+  .cardTitle {
+    font-family: var(--font-family-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .cardValue {
+    font-family: var(--font-family-display);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: var(--spacing-1) 0;
+  }
+
+  .cardDescription {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .infoBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+  }
+
+  .infoBox {
+    background-color: color-mix(in srgb, var(--primary) 8%, transparent);
+    border-left: 4px solid var(--primary);
+    padding: var(--spacing-6);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+
+  .infoBoxTitle {
+    font-family: var(--font-family-display);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: var(--spacing-2);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+  }
+
+  .infoBoxIcon {
+    color: var(--primary);
+  }
+
+  .infoBoxText {
+    font-size: 1rem;
+    color: var(--foreground);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ctaSection {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: clamp(3rem, 5vw, 4rem);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    margin-top: var(--spacing-4);
+  }
+
+  .ctaTitle {
+    font-family: var(--font-family-display);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-6);
+    color: var(--foreground);
+  }
+
+  .ctaActions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-8);
+  }
+
+  .ctaButton {
+    min-width: 250px;
+  }
+
+  .ctaContactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    color: var(--foreground);
+    font-size: 1.05rem;
+  }
+
+  .ctaContactInfo p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2);
+  }
+
+  .ctaContactInfo a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .ctaContactInfo a:hover {
+    color: color-mix(in srgb, var(--primary) 80%, black);
+    text-decoration: underline;
+  }
+
+  .inlineIcon {
+    color: var(--primary);
+  }
+
+  .serviceHours {
+    margin-top: var(--spacing-2) !important;
+    font-size: 0.9rem;
+    color: var(--muted-foreground) !important;
+  }
+}

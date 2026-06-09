@@ -1,0 +1,228 @@
+@layer base {
+  /* --- Hero Section --- */
+  .heroSection {
+    position: relative;
+    background-color: var(--background);
+    color: var(--foreground);
+    padding: clamp(5rem, 12vw, 10rem) var(--spacing-6);
+    overflow: hidden;
+    min-height: max(80vh, 600px);
+    display: flex;
+    align-items: center;
+  }
+
+  .heroImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    z-index: 0;
+  }
+
+  .heroOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to right, hsl(210, 12%, 12%) 0%, hsl(210, 12%, 12%) 25%, hsla(210, 12%, 12%, 0.85) 45%, hsla(210, 12%, 12%, 0.4) 70%, transparent 100%), 
+                linear-gradient(to top, hsl(210, 12%, 12%) 0%, transparent 35%);
+  }
+
+  @media (max-width: 767px) {
+    .heroOverlay {
+      background: linear-gradient(to right, hsl(210, 12%, 12%) 0%, hsla(210, 12%, 12%, 0.9) 60%, hsla(210, 12%, 12%, 0.6) 80%, transparent 100%), 
+                  linear-gradient(to top, hsl(210, 12%, 12%) 0%, transparent 40%);
+    }
+    .heroImage {
+      object-position: 60% center;
+    }
+    .heroSection {
+      min-height: 70vh;
+      align-items: flex-start;
+      padding-top: 8rem;
+    }
+  }
+
+  .heroContainer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .heroContent {
+    max-width: 650px;
+  }
+
+  .heroTitle {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-6);
+    letter-spacing: -0.02em;
+  }
+
+  .heroBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-8);
+  }
+
+  .heroQuote {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--muted-foreground);
+    font-style: italic;
+    margin-bottom: var(--spacing-12);
+    border-left: 4px solid var(--primary);
+    padding-left: var(--spacing-6);
+  }
+
+  .heroQuote footer {
+    margin-top: var(--spacing-4);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--foreground);
+  }
+
+  .heroActions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+  }
+
+  @media (min-width: 768px) {
+    .heroActions {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .heroTrust a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: color-mix(in srgb, var(--surface) 50%, transparent);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    transition: background-color 0.2s ease;
+  }
+
+  .heroTrust a:hover {
+    background-color: var(--surface);
+  }
+
+  .starIcon {
+    color: hsl(45, 100%, 50%);
+    fill: hsl(45, 100%, 50%);
+  }
+
+  /* --- Trust Strip --- */
+  .trustStrip {
+    padding: clamp(4rem, 8vw, 6rem) var(--spacing-6);
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .trustGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  @media (min-width: 640px) {
+    .trustGrid { grid-template-columns: repeat(2, 1fr); gap: var(--spacing-12); }
+  }
+
+  @media (min-width: 1024px) {
+    .trustGrid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .trustItem {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+
+  .trustIcon {
+    color: var(--primary);
+  }
+
+  .trustItem h3 {
+    font-family: var(--font-family-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  .trustItem p {
+    color: var(--muted-foreground);
+    line-height: 1.5;
+  }
+
+  /* --- Einsatzgebiete --- */
+  .einsatzgebieteSection {
+    padding: clamp(4rem, 8vw, 6rem) var(--spacing-6);
+    background-color: var(--background);
+  }
+
+  .einsatzHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-8);
+  }
+
+  .einsatzHeader h2 {
+    font-family: var(--font-family-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-2);
+  }
+
+  .einsatzHeader p {
+    color: var(--muted-foreground);
+    font-size: 1.125rem;
+  }
+
+  .cityGrid {
+    max-width: 1000px;
+    margin: 0 auto var(--spacing-12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-3);
+  }
+
+  .cityBadge {
+    font-size: 0.95rem;
+    padding: var(--spacing-2) var(--spacing-4);
+    background-color: var(--surface);
+  }
+
+  .einsatzLink {
+    text-align: center;
+  }
+
+  /* --- Generic Reveal Item --- */
+  .revealItem {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .revealItem[data-revealed="true"] {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

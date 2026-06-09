@@ -1,0 +1,152 @@
+@layer base {
+  .page {
+    background-color: var(--background);
+  }
+
+  .hero {
+    padding: clamp(5rem, 10vw, 8rem) var(--spacing-6);
+    background-color: var(--background);
+    color: var(--foreground);
+    text-align: center;
+  }
+
+  .containerNarrow {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .heroTitle {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-4);
+    line-height: 1.1;
+  }
+
+  .heroIntro {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: var(--muted-foreground);
+    line-height: 1.6;
+  }
+
+  .contentSection {
+    padding: clamp(4rem, 8vw, 6rem) var(--spacing-6);
+    background-color: var(--surface);
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .answerText {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+    margin: 0;
+    padding-top: var(--spacing-2);
+  }
+
+  .articleContent {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--muted-foreground);
+    padding-top: var(--spacing-2);
+  }
+
+  .paragraph {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .paragraph:last-child {
+    margin-bottom: 0;
+  }
+
+  .list {
+    margin-bottom: var(--spacing-4);
+    padding-left: var(--spacing-6);
+    list-style-type: disc;
+  }
+
+  .orderedList {
+    margin-bottom: var(--spacing-4);
+    padding-left: var(--spacing-6);
+    list-style-type: decimal;
+  }
+
+  .listItem {
+    margin-bottom: var(--spacing-2);
+  }
+
+  .strongText {
+    color: var(--foreground);
+    font-weight: 600;
+  }
+
+  .italicText {
+    font-style: italic;
+    color: var(--foreground);
+  }
+
+  .preiseLink {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    margin-top: var(--spacing-2);
+    transition: color 0.2s ease;
+  }
+
+  .preiseLink:hover {
+    text-decoration: underline;
+  }
+
+  .faqCta {
+    margin-top: var(--spacing-12);
+    padding: clamp(3rem, 5vw, 4rem);
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+
+  .faqCtaTitle {
+    font-family: var(--font-family-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-2);
+    color: var(--foreground);
+  }
+
+  .faqCtaText {
+    color: var(--muted-foreground);
+    margin-bottom: var(--spacing-6);
+  }
+
+  .faqCtaActions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 640px) {
+    .faqCtaActions {
+      flex-direction: row;
+    }
+  }
+
+  .actionButton {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .actionButton {
+      width: auto;
+      min-width: 200px;
+    }
+  }
+}

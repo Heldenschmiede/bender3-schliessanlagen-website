@@ -1,0 +1,170 @@
+@layer base {
+  .page {
+    background-color: var(--background);
+  }
+
+  .profileSection {
+    padding: clamp(4rem, 8vw, 8rem) var(--spacing-6);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    gap: clamp(3rem, 6vw, 6rem);
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 350px 1fr;
+      align-items: start;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: 400px 1fr;
+      gap: 5rem;
+    }
+  }
+
+  .imageColumn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    display: block;
+    object-fit: cover;
+  }
+
+  .textColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-family: var(--font-family-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    color: var(--foreground);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-2);
+  }
+
+  .subtitle {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-4);
+  }
+
+  .badges {
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-6);
+  }
+
+  .badge {
+    background-color: var(--surface);
+  }
+
+  .quoteBlock {
+    position: relative;
+    padding: var(--spacing-8) 0;
+    margin: var(--spacing-6) 0 var(--spacing-8);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .quoteBlock::before {
+    content: '"';
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    font-family: var(--font-family-display);
+    font-size: 8rem;
+    color: var(--primary);
+    opacity: 0.1;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .quoteText {
+    font-family: var(--font-family-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--foreground);
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+  }
+
+  .quoteAuthor {
+    margin-top: var(--spacing-4);
+    font-weight: 600;
+    color: var(--muted-foreground);
+    position: relative;
+    z-index: 1;
+  }
+
+  .bodyText {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    font-size: 1.05rem;
+    color: var(--muted-foreground);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-8);
+  }
+
+  .paragraph {
+    margin: 0;
+  }
+
+  .serviceArea {
+    display: flex;
+    gap: var(--spacing-4);
+    padding: var(--spacing-6);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    align-items: flex-start;
+  }
+
+  .serviceIcon {
+    color: var(--primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .serviceTextGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    align-items: flex-start;
+  }
+
+  .serviceLabel {
+    font-weight: 600;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .serviceLink {
+    padding: 0;
+    height: auto;
+    min-height: auto;
+    font-size: 0.95rem;
+  }
+}
