@@ -21,7 +21,7 @@ export default function UeberUnsPage() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/ueber-uns" />
         <meta property="og:locale" content="de_DE" />
-        <meta property="og:image" content="https://assets.floot.app/c34e9639-bb05-479b-9067-ef5a91d9a1ff/2889701f-58a4-4e29-a375-37502636a9c4.jpeg" />
+        <meta property="og:image" content="/bender-og-image.jpeg" />
         <link rel="canonical" href="https://www.bender-schliessanlagen.de/ueber-uns" />
       </Helmet>
 
@@ -31,7 +31,7 @@ export default function UeberUnsPage() {
             {/* Left: Image */}
             <div className={styles.imageColumn}>
               <img
-                src="https://assets.floot.app/c34e9639-bb05-479b-9067-ef5a91d9a1ff/2889701f-58a4-4e29-a375-37502636a9c4.jpeg"
+                src="/bender-og-image.jpeg"
                 alt="Sascha Bender"
                 className={styles.image}
               />

@@ -78,7 +78,7 @@ export default function Startseite() {
       name: "Sascha Bender",
     },
     url: "https://www.bender-schliessanlagen.de",
-    image: "https://assets.floot.app/c34e9639-bb05-479b-9067-ef5a91d9a1ff/2889701f-58a4-4e29-a375-37502636a9c4.jpeg",
+    image: "/bender-og-image.jpeg",
     description: "BENDER³ ist Ihr regionaler Fachbetrieb für die Planung, den Einbau und die Wartung von Schließanlagen in der Region Bergstraße und Rhein-Neckar. Inhaber Sascha Bender bietet professionellen Service für GHS-, HS- und Zentralschlossanlagen.",
     telephone: "+491785405000",
     email: "info@bender-schliessanlagen.de",
@@ -134,7 +134,7 @@ export default function Startseite() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/" />
         <meta property="og:locale" content="de_DE" />
-        <meta property="og:image" content="https://assets.floot.app/c34e9639-bb05-479b-9067-ef5a91d9a1ff/2889701f-58a4-4e29-a375-37502636a9c4.jpeg" />
+        <meta property="og:image" content="/bender-og-image.jpeg" />
         <link rel="canonical" href="https://www.bender-schliessanlagen.de/" />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
@@ -142,7 +142,7 @@ export default function Startseite() {
       {/* Hero Section */}
       <section className={`dark ${styles.heroSection}`}>
         <img
-          src="/_cdn/static/hero-schluessel.jpg"
+          src="/hero-schluessel.jpg"
           alt="BENDER³ Schließanlagen"
           className={styles.heroImage}
         />

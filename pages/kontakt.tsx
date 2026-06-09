@@ -36,7 +36,7 @@ export default function KontaktPage() {
         <div className={styles.ownerSection}>
           <div className={styles.ownerImageWrapper}>
             <img 
-              src="/_cdn/static/sascha-bender-inhaber.jpg" 
+              src="/sascha-bender-inhaber.jpg"
               alt="Sascha Bender – Inhaber BENDER³ Schliesstechnik"
               className={styles.ownerImage}
             />
