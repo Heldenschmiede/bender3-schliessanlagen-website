@@ -161,6 +161,13 @@
     padding: clamp(4rem, 8vw, 6rem) var(--spacing-6) var(--spacing-8);
   }
 
+  @media (max-width: 767px) {
+    .footer {
+      /* Clears the fixed mobileCtaWrapper button so footer links stay clickable */
+      padding-bottom: calc(var(--spacing-8) + 5.5rem);
+    }
+  }
+
   .footerContainer {
     max-width: 1200px;
     margin: 0 auto;
