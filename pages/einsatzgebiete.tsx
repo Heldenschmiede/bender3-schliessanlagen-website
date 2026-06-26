@@ -53,7 +53,7 @@ export default function EinsatzgebietePage() {
         <div className={styles.containerNarrow}>
           <h1 className={styles.heroTitle}>Unsere Einsatzgebiete</h1>
           <p className={styles.heroIntro}>
-            BENDER³ bietet professionelle Schließanlagen-Dienstleistungen in 21 Städten der Region Bergstraße und Rhein-Neckar an – darunter Mannheim, Weinheim, Ludwigshafen, Heppenheim und Heddesheim (Firmensitz). Wir planen, installieren und warten Schließanlagen vor Ort – ausschließlich auf Terminbasis.
+            BENDER³ bietet professionelle Schließanlagen-Dienstleistungen in 21 Städten der Region Bergstraße & Rhein-Neckar-Kreis an – darunter Mannheim, Weinheim, Ludwigshafen, Heppenheim und Heddesheim (Firmensitz). Wir planen, installieren und warten Schließanlagen vor Ort – ausschließlich auf Terminbasis.
           </p>
         </div>
       </section>
