@@ -35,14 +35,14 @@ export default function EinsatzgebietePage() {
       <Helmet>
         <title>
           Einsatzgebiete – Schließanlagen Service | BENDER³ Bergstraße &
-          Rhein-Neckar
+          Rhein-Neckar-Kreis
         </title>
         <meta
           name="description"
-          content="BENDER³ Schließanlagen-Service in Mannheim, Weinheim, Ludwigshafen, Heppenheim und 17 weiteren Orten. Ihr regionaler Fachbetrieb an der Bergstraße und im Rhein-Neckar-Gebiet."
+          content="BENDER³ Schließanlagen-Service in Mannheim, Weinheim, Ludwigshafen, Heppenheim und 17 weiteren Orten. Ihr regionaler Fachbetrieb an der Bergstraße und im Rhein-Neckar-Kreis."
         />
-        <meta property="og:title" content="Einsatzgebiete – Schließanlagen Service | BENDER³ Bergstraße & Rhein-Neckar" />
-        <meta property="og:description" content="BENDER³ Schließanlagen-Service in Mannheim, Weinheim, Ludwigshafen, Heppenheim und 17 weiteren Orten. Ihr regionaler Fachbetrieb an der Bergstraße und im Rhein-Neckar-Gebiet." />
+        <meta property="og:title" content="Einsatzgebiete – Schließanlagen Service | BENDER³ Bergstraße & Rhein-Neckar-Kreis" />
+        <meta property="og:description" content="BENDER³ Schließanlagen-Service in Mannheim, Weinheim, Ludwigshafen, Heppenheim und 17 weiteren Orten. Ihr regionaler Fachbetrieb an der Bergstraße und im Rhein-Neckar-Kreis." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/einsatzgebiete" />
         <meta property="og:locale" content="de_DE" />
