@@ -243,6 +243,61 @@ export default function Leistungen() {
         </div>
       </section>
 
+      {/* BASI Produktbeispiele */}
+      <section className={styles.basiSection}>
+        <div className={styles.basiHeader}>
+          <h2>Beispiele aus unserer Praxis: BASI Schließsysteme</h2>
+          <p>
+            Für die Umsetzung Ihrer Schließanlage setze ich auf hochwertige
+            Zylindersysteme meines Zulieferers BASI. Zwei Beispiele aus dem
+            Sortiment:
+          </p>
+        </div>
+
+        <div className={styles.basiGrid}>
+          <div className={styles.basiCard}>
+            <div className={styles.basiImagePlaceholder}>
+              <KeyRound size={48} />
+            </div>
+            <h3>X·50 SP</h3>
+            <p className={styles.typeDesc}>
+              Hochsicherheitszylinder mit patentiertem Sonderprofil (bis 2037
+              geschützt). Anti-Bumping- und Anti-Picking-Stifte aus
+              gehärtetem Stahl sowie ein bewegliches Sicherungselement
+              erschweren unbefugtes Öffnen und Nachfertigen erheblich. Der
+              Schlüssel besitzt ein zusätzliches Steuerelement aus
+              Neusilber als aktiven Kopierschutz – ideal für
+              Schließanlagen mit Gebietsschutz.
+            </p>
+          </div>
+
+          <div className={styles.basiCard}>
+            <div className={styles.basiImagePlaceholder}>
+              <ShieldCheck size={48} />
+            </div>
+            <h3>S·30 SP</h3>
+            <p className={styles.typeDesc}>
+              Geschütztes Bohrmuldensystem mit bis zu 11 Zuhaltungen und
+              integriertem Anti-Snap-Mechanismus, der den Zylinder gezielt
+              an einer Sollbruchstelle schützt. Der Schlüssel aus Neusilber
+              trägt zusätzliche Wellenlinien, die das Kopieren erschweren.
+              Ebenfalls patentiert bis 2037.
+            </p>
+          </div>
+        </div>
+
+        <p className={styles.basiSource}>
+          Produktinformationen:{" "}
+          <a
+            href="https://basi.eu/schliesssysteme/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            basi.eu/schliesssysteme
+          </a>
+        </p>
+      </section>
+
       {/* Process Section */}
       <ProcessSection />
 
