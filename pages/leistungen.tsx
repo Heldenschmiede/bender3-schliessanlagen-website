@@ -256,9 +256,11 @@ export default function Leistungen() {
 
         <div className={styles.basiGrid}>
           <div className={styles.basiCard}>
-            <div className={styles.basiImagePlaceholder}>
-              <KeyRound size={48} />
-            </div>
+            <img
+              src="/basi-x50sp.webp"
+              alt="BASI X50 SP Schließzylinder im Schnittmodell mit Schlüssel"
+              className={styles.basiImage}
+            />
             <h3>X·50 SP</h3>
             <p className={styles.typeDesc}>
               Hochsicherheitszylinder mit patentiertem Sonderprofil (bis 2037
@@ -272,9 +274,11 @@ export default function Leistungen() {
           </div>
 
           <div className={styles.basiCard}>
-            <div className={styles.basiImagePlaceholder}>
-              <ShieldCheck size={48} />
-            </div>
+            <img
+              src="/basi-s30sp.webp"
+              alt="BASI S30 SP Schließzylinder im Schnittmodell mit Schlüssel"
+              className={styles.basiImage}
+            />
             <h3>S·30 SP</h3>
             <p className={styles.typeDesc}>
               Geschütztes Bohrmuldensystem mit bis zu 11 Zuhaltungen und

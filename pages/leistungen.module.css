@@ -200,21 +200,12 @@
     margin: var(--spacing-4) 0 var(--spacing-2);
   }
 
-  .basiImagePlaceholder {
-    aspect-ratio: 4 / 3;
-    border-radius: var(--radius-md);
-    background-color: color-mix(in srgb, var(--primary) 8%, var(--surface));
-    border: 1px dashed var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary);
-  }
-
   .basiImage {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid var(--border);
     border-radius: var(--radius-md);
   }
 
