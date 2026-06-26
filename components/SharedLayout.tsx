@@ -41,7 +41,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
       <header className={styles.header}>
         <div className={styles.navContainer}>
           <Link to="/" className={styles.logo}>
-            BENDER<sup>³</sup>
+            <img src="/bender-logo.png" alt="BENDER³ Schliesstechnik" className={styles.logoImg} />
           </Link>
 
           <nav className={styles.desktopNav}>
@@ -88,7 +88,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
         <div className={styles.footerContainer}>
           <div className={styles.footerCol}>
             <Link to="/" className={styles.logo}>
-              BENDER<sup>³</sup>
+              <img src="/bender-logo.png" alt="BENDER³ Schliesstechnik" className={styles.logoImg} />
             </Link>
             <p className={styles.footerTagline}>Fair – Seriös – Regional</p>
             <p className={styles.footerText}>

@@ -37,19 +37,17 @@
 
   .logo {
     display: flex;
-    align-items: flex-start;
-    font-family: var(--font-family-display);
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: var(--foreground);
+    align-items: center;
     text-decoration: none;
     line-height: 1;
   }
-  
-  .logo sup {
-    font-size: 0.875rem;
-    color: var(--primary);
-    font-weight: 600;
+
+  .logoImg {
+    height: 2.25rem;
+    width: auto;
+    display: block;
+    -webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 80%, transparent 100%);
+    mask-image: radial-gradient(ellipse 85% 85% at center, black 80%, transparent 100%);
   }
 
   .desktopNav {
