@@ -29,6 +29,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
     { label: "Leistungen", path: "/leistungen" },
     { label: "Preise", path: "/preise" },
     { label: "Einsatzgebiete", path: "/einsatzgebiete" },
+    { label: "Über uns", path: "/ueber-uns" },
     { label: "FAQ", path: "/faq" },
     { label: "Kontakt", path: "/kontakt" },
   ];
@@ -76,9 +77,6 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
               {link.label}
             </Link>
           ))}
-          <Link to="/ueber-uns" className={styles.mobileNavLink}>
-            Über uns
-          </Link>
         </div>
       )}
 
