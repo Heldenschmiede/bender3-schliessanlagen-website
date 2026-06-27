@@ -15,6 +15,7 @@ import { Button } from "../components/Button";
 import { ProcessSection } from "../components/ProcessSection";
 import { CTABanner } from "../components/CTABanner";
 import { useScrollReveal } from "../helpers/useScrollReveal";
+import { useGoogleRating } from "../helpers/useGoogleRating";
 import styles from "./_index.module.css";
 
 const CITIES = [
@@ -68,6 +69,7 @@ export default function Startseite() {
   const revealHeroContent = useScrollReveal();
   const revealTrust = useScrollReveal();
   const revealCities = useScrollReveal();
+  const { rating, reviewCount, ratingLabel } = useGoogleRating();
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -98,8 +100,8 @@ export default function Startseite() {
     priceRange: "€€",
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "93",
+      ratingValue: String(rating),
+      reviewCount: String(reviewCount),
       bestRating: "5"
     },
     hasOfferCatalog: {
@@ -202,7 +204,7 @@ export default function Startseite() {
                 rel="noopener noreferrer"
               >
                 <Star size={16} className={styles.starIcon} />
-                4,9 bei 93 Bewertungen auf Google
+                {ratingLabel} bei {reviewCount} Bewertungen auf Google
               </a>
             </div>
           </div>
