@@ -16,7 +16,7 @@ import { Badge } from "../components/Badge";
 import { ProcessSection } from "../components/ProcessSection";
 import { CTABanner } from "../components/CTABanner";
 import { useScrollReveal } from "../helpers/useScrollReveal";
-import { useGoogleRating } from "../helpers/useGoogleRating";
+import { GOOGLE_REVIEW_COUNT, GOOGLE_RATING_LABEL } from "../helpers/googleRating";
 import styles from "./leistungen.module.css";
 
 export default function Leistungen() {
@@ -24,7 +24,6 @@ export default function Leistungen() {
   const revealTypes = useScrollReveal({ threshold: 0.1 });
   const revealSK = useScrollReveal();
   const revealWS = useScrollReveal();
-  const { reviewCount, ratingLabel } = useGoogleRating();
 
   return (
     <>
@@ -78,7 +77,7 @@ export default function Leistungen() {
             style={{ transitionDelay: "300ms" }}
           >
             <Star size={16} className={styles.starIcon} />
-            {ratingLabel} bei {reviewCount} Bewertungen auf Google
+            {GOOGLE_RATING_LABEL} bei {GOOGLE_REVIEW_COUNT} Bewertungen auf Google
           </a>
         </div>
       </section>

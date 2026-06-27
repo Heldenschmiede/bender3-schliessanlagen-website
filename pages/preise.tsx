@@ -14,11 +14,10 @@ import {
   Star
 } from "lucide-react";
 import { Button } from "../components/Button";
-import { useGoogleRating } from "../helpers/useGoogleRating";
+import { GOOGLE_REVIEW_COUNT, GOOGLE_RATING_LABEL } from "../helpers/googleRating";
 import styles from "./preise.module.css";
 
 export default function PreisePage() {
-  const { reviewCount, ratingLabel } = useGoogleRating();
   return (
     <div className={styles.page}>
       <Helmet>
@@ -47,7 +46,7 @@ export default function PreisePage() {
             className={styles.trustBadge}
           >
             <Star size={16} className={styles.starIcon} />
-            {ratingLabel} bei {reviewCount} Bewertungen auf Google
+            {GOOGLE_RATING_LABEL} bei {GOOGLE_REVIEW_COUNT} Bewertungen auf Google
           </a>
         </div>
       </section>

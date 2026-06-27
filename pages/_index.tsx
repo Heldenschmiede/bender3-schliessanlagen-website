@@ -15,7 +15,7 @@ import { Button } from "../components/Button";
 import { ProcessSection } from "../components/ProcessSection";
 import { CTABanner } from "../components/CTABanner";
 import { useScrollReveal } from "../helpers/useScrollReveal";
-import { useGoogleRating } from "../helpers/useGoogleRating";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_RATING_LABEL } from "../helpers/googleRating";
 import styles from "./_index.module.css";
 
 const CITIES = [
@@ -69,7 +69,6 @@ export default function Startseite() {
   const revealHeroContent = useScrollReveal();
   const revealTrust = useScrollReveal();
   const revealCities = useScrollReveal();
-  const { rating, reviewCount, ratingLabel } = useGoogleRating();
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -100,8 +99,8 @@ export default function Startseite() {
     priceRange: "€€",
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: String(rating),
-      reviewCount: String(reviewCount),
+      ratingValue: String(GOOGLE_RATING),
+      reviewCount: String(GOOGLE_REVIEW_COUNT),
       bestRating: "5"
     },
     hasOfferCatalog: {
@@ -204,7 +203,7 @@ export default function Startseite() {
                 rel="noopener noreferrer"
               >
                 <Star size={16} className={styles.starIcon} />
-                {ratingLabel} bei {reviewCount} Bewertungen auf Google
+                {GOOGLE_RATING_LABEL} bei {GOOGLE_REVIEW_COUNT} Bewertungen auf Google
               </a>
             </div>
           </div>
