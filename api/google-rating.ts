@@ -3,7 +3,7 @@ export const config = { runtime: "edge" };
 // Fallback used if the Google API call fails or the env vars aren't set yet.
 const FALLBACK = { rating: 4.9, reviewCount: 93 };
 
-const PLACE_ID = process.env.GOOGLE_PLACE_ID;
+const PLACE_ID = "ChIJhbrzYA3Fl0cRLKBva1rqHc4";
 const API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
 export default async function handler() {
