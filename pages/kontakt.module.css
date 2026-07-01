@@ -216,6 +216,44 @@
     margin: 0;
   }
 
+  .reviewBox {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-10);
+    text-align: center;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+  }
+
+  .reviewStars {
+    display: flex;
+    gap: var(--spacing-1);
+  }
+
+  .reviewStar {
+    color: hsl(45, 100%, 50%);
+    fill: hsl(45, 100%, 50%);
+  }
+
+  .reviewTitle {
+    font-family: var(--font-family-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin: 0;
+  }
+
+  .reviewText {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 500px;
+  }
+
   .mapSection {
     margin-top: var(--spacing-8);
   }

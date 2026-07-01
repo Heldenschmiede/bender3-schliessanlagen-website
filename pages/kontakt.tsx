@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { Phone, Mail, User, Clock, MapPin, CalendarClock, Info } from "lucide-react";
+import { Phone, Mail, User, Clock, MapPin, CalendarClock, Info, Star } from "lucide-react";
 import { Button } from "../components/Button";
 import styles from "./kontakt.module.css";
 
@@ -141,6 +141,23 @@ export default function KontaktPage() {
           </p>
           <Button asChild variant="outline" size="lg">
             <Link to="/preise">Preise ansehen →</Link>
+          </Button>
+        </div>
+
+        <div className={styles.reviewBox}>
+          <div className={styles.reviewStars}>
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={22} className={styles.reviewStar} />
+            ))}
+          </div>
+          <h2 className={styles.reviewTitle}>Zufrieden mit unserem Service?</h2>
+          <p className={styles.reviewText}>
+            Wir freuen uns über Ihre Bewertung auf Google – das hilft anderen Kunden, uns zu finden.
+          </p>
+          <Button asChild variant="primary" size="lg">
+            <a href="https://g.page/r/CSygb2ta6h3OEBM/review" target="_blank" rel="noopener noreferrer">
+              Bewertung abgeben
+            </a>
           </Button>
         </div>
 
