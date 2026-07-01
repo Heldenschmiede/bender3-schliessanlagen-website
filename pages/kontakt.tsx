@@ -11,12 +11,12 @@ export default function KontaktPage() {
   return (
     <>
       <Helmet>
-        <title>Kontakt – Termin vereinbaren | BENDER³ Schliesstechnik</title>
+        <title>Kontakt – Termin vereinbaren | Bender³ Schließanlagen</title>
         <meta
           name="description"
           content="Kontaktieren Sie BENDER³: 0178–5405000 oder info@bender-schliessanlagen.de. Schließanlagen-Experte Sascha Bender – Termine nach Vereinbarung in der Region Bergstraße & Rhein-Neckar."
         />
-        <meta property="og:title" content="Kontakt – Termin vereinbaren | BENDER³ Schliesstechnik" />
+        <meta property="og:title" content="Kontakt – Termin vereinbaren | Bender³ Schließanlagen" />
         <meta property="og:description" content="Kontaktieren Sie BENDER³: 0178–5405000 oder info@bender-schliessanlagen.de. Schließanlagen-Experte Sascha Bender – Termine nach Vereinbarung in der Region Bergstraße & Rhein-Neckar." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/kontakt" />
@@ -37,13 +37,13 @@ export default function KontaktPage() {
           <div className={styles.ownerImageWrapper}>
             <img 
               src="/sascha-bender-inhaber.jpg"
-              alt="Sascha Bender – Inhaber BENDER³ Schliesstechnik"
+              alt="Sascha Bender – Inhaber Bender³ Schließanlagen"
               className={styles.ownerImage}
             />
           </div>
           <div className={styles.ownerInfo}>
             <h2 className={styles.ownerName}>Sascha Bender</h2>
-            <p className={styles.ownerRole}>Inhaber BENDER³ Schliesstechnik</p>
+            <p className={styles.ownerRole}>Inhaber Bender³ Schließanlagen</p>
             <p className={styles.ownerText}>
               Ihr persönlicher Ansprechpartner für Planung, Einbau und Wartung von Schließanlagen in der Region Bergstraße & Rhein-Neckar.
             </p>
@@ -179,7 +179,7 @@ export default function KontaktPage() {
               </div>
             ) : (
               <iframe
-                title="Google Maps BENDER³ Schliesstechnik"
+                title="Google Maps Bender³ Schließanlagen"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.3263704284583!2d8.598375076625807!3d49.50821617143431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cf4353d4ebf5%3A0xe5a3c990ad3d7e7e!2sKirschbl%C3%BCtenstra%C3%9Fe%2047%2C%2068542%20Heddesheim!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
                 className={styles.mapIframe}
                 allowFullScreen

@@ -73,14 +73,14 @@ export default function Startseite() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "BENDER³ Schliesstechnik",
+    name: "Bender³ Schließanlagen",
     owner: {
       "@type": "Person",
       name: "Sascha Bender",
     },
     url: "https://www.bender-schliessanlagen.de",
     image: "/bender-og-image.jpeg",
-    description: "BENDER³ ist Ihr regionaler Fachbetrieb für die Planung, den Einbau und die Wartung von Schließanlagen in der Region Bergstraße und Rhein-Neckar. Inhaber Sascha Bender bietet professionellen Service für GHS-, HS- und Zentralschlossanlagen.",
+    description: "Bender³ Schließanlagen ist Ihr regionaler Fachbetrieb für die Planung, den Einbau und die Wartung von Schließanlagen in der Region Bergstraße und Rhein-Neckar. Inhaber Sascha Bender bietet professionellen Service für GHS-, HS- und Zentralschlossanlagen.",
     telephone: "+491785405000",
     email: "info@bender-schliessanlagen.de",
     address: {
@@ -123,14 +123,14 @@ export default function Startseite() {
     <>
       <Helmet>
         <title>
-          BENDER³ Schliesstechnik – Professionelle Schließanlagen | Bergstraße &
+          Bender³ Schließanlagen – Professionelle Schließanlagen | Bergstraße &
           Rhein-Neckar
         </title>
         <meta
           name="description"
           content="Schließanlagen vom Fachbetrieb: Planung, Einbau und Wartung. BENDER³ – Ihr regionaler Experte für Schließanlagen in Mannheim, Weinheim, Heidelberg und der Region Bergstraße."
         />
-        <meta property="og:title" content="BENDER³ Schliesstechnik – Professionelle Schließanlagen | Bergstraße & Rhein-Neckar" />
+        <meta property="og:title" content="Bender³ Schließanlagen – Professionelle Schließanlagen | Bergstraße & Rhein-Neckar" />
         <meta property="og:description" content="Schließanlagen vom Fachbetrieb: Planung, Einbau und Wartung. BENDER³ – Ihr regionaler Experte für Schließanlagen in Mannheim, Weinheim, Heidelberg und der Region Bergstraße." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/" />

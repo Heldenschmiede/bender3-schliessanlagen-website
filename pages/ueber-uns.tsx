@@ -11,13 +11,13 @@ export default function UeberUnsPage() {
   return (
     <div className={styles.page}>
       <Helmet>
-        <title>Über uns – Sascha Bender | BENDER³ Schliesstechnik</title>
+        <title>Über uns – Sascha Bender | Bender³ Schließanlagen</title>
         <meta
           name="description"
-          content="BENDER³ – Ihr Fachbetrieb für Schließanlagen. Inhaber Sascha Bender: Fair, seriös, regional. Planung, Einbau und Wartung in der Region Bergstraße & Rhein-Neckar."
+          content="Bender³ Schließanlagen – Ihr Fachbetrieb für Schließanlagen. Inhaber Sascha Bender: Fair, seriös, regional. Planung, Einbau und Wartung in der Region Bergstraße & Rhein-Neckar."
         />
-        <meta property="og:title" content="Über uns – Sascha Bender | BENDER³ Schliesstechnik" />
-        <meta property="og:description" content="BENDER³ – Ihr Fachbetrieb für Schließanlagen. Inhaber Sascha Bender: Fair, seriös, regional. Planung, Einbau und Wartung in der Region Bergstraße & Rhein-Neckar." />
+        <meta property="og:title" content="Über uns – Sascha Bender | Bender³ Schließanlagen" />
+        <meta property="og:description" content="Bender³ Schließanlagen – Ihr Fachbetrieb für Schließanlagen. Inhaber Sascha Bender: Fair, seriös, regional. Planung, Einbau und Wartung in der Region Bergstraße & Rhein-Neckar." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/ueber-uns" />
         <meta property="og:locale" content="de_DE" />
@@ -40,7 +40,7 @@ export default function UeberUnsPage() {
             {/* Right: Content */}
             <div className={styles.textColumn}>
               <h1 className={styles.title}>Sascha Bender</h1>
-              <p className={styles.subtitle}>Inhaber BENDER³ Schliesstechnik</p>
+              <p className={styles.subtitle}>Inhaber Bender³ Schließanlagen</p>
 
               <div className={styles.badges}>
                 <Badge variant="outline" className={styles.badge}>

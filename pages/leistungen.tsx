@@ -29,13 +29,13 @@ export default function Leistungen() {
     <>
       <Helmet>
         <title>
-          Schließanlagen – Planung, Einbau & Wartung | BENDER³ Schliesstechnik
+          Schließanlagen – Planung, Einbau & Wartung | Bender³ Schließanlagen
         </title>
         <meta
           name="description"
           content="Professionelle Schließanlagen komplett aus einer Hand. GHS-, HS- und Zentralschlossanlagen für Unternehmen, Verwaltungen und Wohnhäuser. BENDER³ Bergstraße & Rhein-Neckar."
         />
-        <meta property="og:title" content="Schließanlagen – Planung, Einbau & Wartung | BENDER³ Schliesstechnik" />
+        <meta property="og:title" content="Schließanlagen – Planung, Einbau & Wartung | Bender³ Schließanlagen" />
         <meta property="og:description" content="Professionelle Schließanlagen komplett aus einer Hand. GHS-, HS- und Zentralschlossanlagen für Unternehmen, Verwaltungen und Wohnhäuser. BENDER³ Bergstraße & Rhein-Neckar." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/leistungen" />

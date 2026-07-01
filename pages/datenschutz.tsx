@@ -6,13 +6,13 @@ export default function DatenschutzPage() {
   return (
     <>
       <Helmet>
-        <title>Datenschutzerklärung | BENDER³ Schliesstechnik</title>
+        <title>Datenschutzerklärung | Bender³ Schließanlagen</title>
         <meta
           name="description"
-          content="Datenschutzerklärung der BENDER³ Schliesstechnik gemäß DSGVO."
+          content="Datenschutzerklärung der Bender³ Schließanlagen gemäß DSGVO."
         />
-        <meta property="og:title" content="Datenschutzerklärung | BENDER³ Schliesstechnik" />
-        <meta property="og:description" content="Datenschutzerklärung der BENDER³ Schliesstechnik gemäß DSGVO." />
+        <meta property="og:title" content="Datenschutzerklärung | Bender³ Schließanlagen" />
+        <meta property="og:description" content="Datenschutzerklärung der Bender³ Schließanlagen gemäß DSGVO." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/datenschutz" />
         <meta property="og:locale" content="de_DE" />
@@ -30,7 +30,7 @@ export default function DatenschutzPage() {
               <br />
               Sascha Bender
               <br />
-              BENDER³ Schliesstechnik
+              Bender³ Schließanlagen
               <br />
               Kirschblütenstr. 47
               <br />

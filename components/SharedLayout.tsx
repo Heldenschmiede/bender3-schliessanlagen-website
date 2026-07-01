@@ -41,7 +41,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
       <header className={styles.header}>
         <div className={styles.navContainer}>
           <Link to="/" className={styles.logo}>
-            <img src="/bender-logo.png" alt="BENDER³ Schliesstechnik" className={styles.logoImg} />
+            <img src="/bender-logo.png" alt="Bender³ Schließanlagen" className={styles.logoImg} />
           </Link>
 
           <nav className={styles.desktopNav}>
@@ -88,7 +88,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
         <div className={styles.footerContainer}>
           <div className={styles.footerCol}>
             <Link to="/" className={styles.logo}>
-              <img src="/bender-logo.png" alt="BENDER³ Schliesstechnik" className={styles.logoImg} />
+              <img src="/bender-logo.png" alt="Bender³ Schließanlagen" className={styles.logoImg} />
             </Link>
             <p className={styles.footerTagline}>Fair – Seriös – Regional</p>
             <p className={styles.footerText}>
@@ -161,7 +161,7 @@ export const SharedLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
 
         <div className={styles.footerBottom}>
-          <p>© Inhaber Sascha Bender | BENDER³ Schliesstechnik</p>
+          <p>© Inhaber Sascha Bender | Bender³ Schließanlagen</p>
           <div className={styles.footerLegalLinks}>
             <Link to="/impressum" className={styles.footerLink}>Impressum</Link>
             <Link to="/datenschutz" className={styles.footerLink}>Datenschutz</Link>

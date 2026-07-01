@@ -6,13 +6,13 @@ export default function ImpressumPage() {
   return (
     <>
       <Helmet>
-        <title>Impressum | BENDER³ Schliesstechnik</title>
+        <title>Impressum | Bender³ Schließanlagen</title>
         <meta
           name="description"
-          content="Impressum der BENDER³ Schliesstechnik – Sascha Bender, Heddesheim. Angaben gemäß § 5 TMG."
+          content="Impressum der Bender³ Schließanlagen – Sascha Bender, Heddesheim. Angaben gemäß § 5 TMG."
         />
-        <meta property="og:title" content="Impressum | BENDER³ Schliesstechnik" />
-        <meta property="og:description" content="Impressum der BENDER³ Schliesstechnik – Sascha Bender, Heddesheim. Angaben gemäß § 5 TMG." />
+        <meta property="og:title" content="Impressum | Bender³ Schließanlagen" />
+        <meta property="og:description" content="Impressum der Bender³ Schließanlagen – Sascha Bender, Heddesheim. Angaben gemäß § 5 TMG." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.bender-schliessanlagen.de/impressum" />
         <meta property="og:locale" content="de_DE" />
@@ -28,7 +28,7 @@ export default function ImpressumPage() {
             <p>
               Sascha Bender
               <br />
-              BENDER³ Schliesstechnik
+              Bender³ Schließanlagen
               <br />
               Kirschblütenstr. 47
               <br />
